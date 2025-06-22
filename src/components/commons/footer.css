@@ -1,0 +1,159 @@
+footer {
+  background: #f4f4f4;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+footer .left {
+  text-align: center;
+}
+
+footer .logoAfa {
+  max-width: 137px;
+}
+
+footer .contentSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  border-bottom: solid 1px var(--secondary-color);
+  padding-bottom: 16px;
+}
+
+footer .contentSocial a {
+  display: inline-block;
+  padding-right: 30px;
+}
+
+footer .contentSocial a:last-child {
+  padding-right: 0;
+}
+
+footer .contentSocial a:hover {
+  opacity: 0.6;
+}
+
+footer .contentSocial img {
+  width: 32px;
+}
+
+footer .navFooter {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: solid 1px var(--secondary-color);
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+
+footer .navFooter li {
+  margin-bottom: 15px;
+}
+
+footer .navFooter li:last-child {
+  margin-bottom: 0;
+}
+
+footer .navFooter a {
+  color: var(--primary-color);
+  text-decoration: underline !important;
+}
+
+footer .navFooter a.active {
+  color: var(--secondary-color) !important;
+}
+
+footer .navFooter a:hover {
+  color: var(--secondary-color);
+}
+
+footer .contentLogos {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--secondary-color);
+}
+
+footer .logoAfaDorado {
+  width: 64px;
+}
+
+footer .board {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+footer .board img {
+  margin-left: 5px;
+}
+
+footer .board a:hover img {
+  opacity: 0.6;
+}
+
+footer .board {
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  footer .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .contentSocial {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  footer .navFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 32px !important;
+  }
+
+  footer .navFooter li {
+    margin-bottom: 0;
+  }
+
+  footer .contentLogos {
+    justify-content: flex-end;
+    gap: 32px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+  footer .navFooter {
+    font-weight: 700;
+    font-size: 1.15rem;
+  }
+
+  footer .contentLogos {
+    gap: 64px;
+  }
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}
+
+@media (min-width: 1800px) {
+}

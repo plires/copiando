@@ -1,0 +1,120 @@
+.otrosServicios {
+  position: relative;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.otrosServicios .data {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.otrosServicios h4 {
+  color: var(--primary-color);
+  font-weight: 900;
+}
+
+.otrosServicios .contentGestor {
+  margin-bottom: 30px;
+}
+
+.otrosServicios .contentFirma {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.otrosServicios .contentFirma .contentImg {
+  order: 1;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .otrosServicios .titleH3 {
+    margin-bottom: 0;
+  }
+
+  .otrosServicios .contentGestor,
+  .otrosServicios .contentFirma {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .otrosServicios .data {
+    width: 60%;
+    max-width: 60%;
+  }
+
+  .otrosServicios .contentImg {
+    width: 40%;
+    max-width: 40%;
+  }
+
+  .otrosServicios .contentFirma .contentImg {
+    order: initial;
+  }
+
+  .otrosServicios .contentGestor .data,
+  .otrosServicios .contentFirma .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 60px;
+  }
+
+  .otrosServicios .contentFirma .data {
+    text-align: left;
+    padding: 0 12px 0 30px;
+    align-items: flex-start;
+  }
+
+  .otrosServicios .data p {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .otrosServicios .data h4 {
+    font-size: 2rem;
+  }
+
+  .otrosServicios .data p {
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .otrosServicios .data h4 {
+    font-size: 2.25rem;
+  }
+
+  .otrosServicios .data p {
+    font-size: 1.25rem;
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .otrosServicios .contentGestor .data,
+  .otrosServicios .contentFirma .data {
+    padding-right: 150px;
+  }
+
+  .otrosServicios .data p {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1600px) {
+}
+
+@media (min-width: 1800px) {
+}

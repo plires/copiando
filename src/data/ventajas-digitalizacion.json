@@ -1,0 +1,54 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Simplicidad",
+      "description": "Facilita el acceso a los documentos."
+    },
+    {
+      "id": 2,
+      "title": "Preservación",
+      "description": "Garantiza la conservación de los documentos."
+    },
+    {
+      "id": 3,
+      "title": "Versatilidad",
+      "description": "Se puede incorporar a otro documento electrónico."
+    },
+    {
+      "id": 4,
+      "title": "Simultaneidad",
+      "description": "Consulta simultanea del mismo documento."
+    },
+    {
+      "id": 5,
+      "title": "Seguridad",
+      "description": "Gestión de la información con claves de acceso."
+    },
+    {
+      "id": 6,
+      "title": "Optimización",
+      "description": "Mejoramiento del uso del espacio físico."
+    },
+    {
+      "id": 7,
+      "title": "Eficiencia y Eficacia",
+      "description": "Agiliza el manejo de la información y evita perdida de documentos."
+    },
+    {
+      "id": 8,
+      "title": "Responsabilidad Social",
+      "description": "Mejora la reputación de tu empresa con la disminución del uso del papel, reforzando el compromiso con la conservación del medio ambiente."
+    },
+    {
+      "id": 9,
+      "title": "Calidad",
+      "description": "Mejora la imagen de los documentos deteriorados."
+    },
+    {
+      "id": 10,
+      "title": "Agilidad",
+      "description": "Incrementa la productividad de los RR.HH, al reducir los tiempos de búsqueda."
+    }
+  ]
+}

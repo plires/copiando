@@ -1,6 +1,14 @@
-import itemsFaqs from '@/data/faqs-section.json'
+import items from '@/data/ventajas-digitalizacion.json'
+import equipos from '@/data/equipos.json'
+import equiposCaracteristicas from '@/data/equipos-caracteristicas.json'
+import serviciosCaracteristicas from '@/data/servicios-caracteristicas.json'
+import logos from '@/data/logos.json'
 
-export const getItemsFaqs = key => itemsFaqs[key]
+export const getItems = key => items[key]
+export const getEquipos = key => equipos[key]
+export const getEquiposCaracteristicas = key => equiposCaracteristicas[key]
+export const getServiciosCaracteristicas = key => serviciosCaracteristicas[key]
+export const getLogos = key => logos[key]
 
 export const scrollToTop = () => {
   window.scroll({

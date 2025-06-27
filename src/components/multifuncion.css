@@ -1,0 +1,94 @@
+.multifuncion {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.multifuncion .titleH3 {
+  margin-bottom: 46px;
+}
+
+.multifuncion .puntosIzq {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.multifuncion .puntosIzq img {
+  width: 150px;
+}
+
+.multifuncion .contentSuperior {
+  margin-bottom: 30px;
+}
+
+.multifuncion .contentInferior {
+  margin-bottom: 30px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 420px) {
+}
+
+@media (min-width: 460px) {
+}
+
+@media (min-width: 576px) {
+  .multifuncion .equipo {
+    max-width: 425px;
+    margin-bottom: 32px;
+  }
+
+  .multifuncion .item {
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .multifuncion .puntosIzq {
+    top: 370px;
+  }
+
+  .multifuncion .equipo {
+    max-width: 100%;
+  }
+
+  .multifuncion .contentEquipo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .multifuncion .item {
+    height: 283px;
+  }
+}
+
+@media (min-width: 992px) {
+  .multifuncion .puntosIzq {
+    top: 0;
+  }
+
+  .multifuncion .puntosIzq {
+    top: 0;
+  }
+
+  .multifuncion .item {
+    height: 255px;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}
+
+@media (min-width: 1800px) {
+}

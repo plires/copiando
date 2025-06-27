@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "srcImg": "provincia.webp",
+      "altImg": "logo banco provincia"
+    },
+    {
+      "id": 2,
+      "srcImg": "roffo.webp",
+      "altImg": "logo roffo"
+    },
+    {
+      "id": 3,
+      "srcImg": "ministerio-fiscal.webp",
+      "altImg": "logo ministerio fiscal"
+    },
+    {
+      "id": 4,
+      "srcImg": "estudio-carrega.webp",
+      "altImg": "logo estudio carrega"
+    },
+    {
+      "id": 5,
+      "srcImg": "uba.webp",
+      "altImg": "logo uba"
+    },
+    {
+      "id": 6,
+      "srcImg": "hospital-clinicas.webp",
+      "altImg": "logo hospital de clinicas"
+    }
+  ]
+}

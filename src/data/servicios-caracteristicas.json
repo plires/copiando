@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "PYMES",
+      "col": "izq"
+    },
+    {
+      "id": 2,
+      "title": "Estudios profesionales (jurídicos, contables, auditorías)",
+      "col": "izq"
+    },
+    {
+      "id": 3,
+      "title": "Comercios mayoristas y minoristas",
+      "col": "izq"
+    },
+    {
+      "id": 4,
+      "title": "Financieras",
+      "col": "izq"
+    },
+    {
+      "id": 5,
+      "title": "Centros educativos",
+      "col": "izq"
+    },
+    {
+      "id": 6,
+      "title": "Constructoras",
+      "col": "izq"
+    },
+    {
+      "id": 7,
+      "title": "Hoteles",
+      "col": "der"
+    },
+    {
+      "id": 8,
+      "title": "Inmobiliarias",
+      "col": "der"
+    },
+    {
+      "id": 9,
+      "title": "Empresas de logística",
+      "col": "der"
+    },
+    {
+      "id": 10,
+      "title": "Empresas de seguros",
+      "col": "der"
+    },
+    {
+      "id": 11,
+      "title": "Clínicas, hospitales, centros médicos",
+      "col": "der"
+    },
+    {
+      "id": 12,
+      "title": "Entidades gubernamentales",
+      "col": "der"
+    },
+    {
+      "id": 13,
+      "title": "Organismos públicos",
+      "col": "der"
+    },
+    {
+      "id": 14,
+      "title": "Empresas de turismo",
+      "col": "izq"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "number": "01.",
+      "title": "<p>AGILIDAD DE <br><span>SERVICIO</span></p>",
+      "description": "La mejor velocidad de respuesta del mercado, en mantenimiento e instalación."
+    },
+    {
+      "id": 2,
+      "number": "02.",
+      "title": "<p>3 EN 1 <br><span>MULTIFUNCIÓN</span></p>",
+      "description": "Fotocopia, impresión y scanner. ¡Todo en el mismo equipo!"
+    },
+    {
+      "id": 3,
+      "number": "03.",
+      "title": "<p>LO ÚLTIMO EN<br><span>TECNOLOGÍA</span></p>",
+      "description": "Equipos de último modelo que adaptamos a la reducción o ampliación de tu demanda."
+    },
+    {
+      "id": 4,
+      "number": "04.",
+      "title": "<p><span>ESCALABILIDAD</span></p>",
+      "description": "Cantidad y modelos de equipos según tu demanda. ¡Nosotros nos adaptamos a vos!"
+    },
+    {
+      "id": 5,
+      "number": "05.",
+      "title": "<p>OPTIMIZACIÓN DE<br><span>GASTOS</span></p>",
+      "description": "El mejor servicio y tecnología, a un precio mas bajo del que estas pagando."
+    },
+    {
+      "id": 6,
+      "number": "06.",
+      "title": "<p>CONTROL DE<br><span>USO</span></p>",
+      "description": "Podés medir la cantidad de impresiones, copias o escaneos que hacés con el equipo y quienes lo hacen."
+    }
+  ]
+}

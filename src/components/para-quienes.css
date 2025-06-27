@@ -1,0 +1,32 @@
+.paraQuienes {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .paraQuienes .titleH2 {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+  .paraQuienes .titleH2 {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1800px) {
+}

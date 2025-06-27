@@ -1,0 +1,95 @@
+.digitalizacion {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.digitalizacion .preguntas {
+  font-size: 0.85rem;
+}
+
+.digitalizacion .preguntas span {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.digitalizacion .contentData {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 420px) {
+}
+
+@media (min-width: 460px) {
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .digitalizacion .titleH3 {
+    margin-bottom: 2rem;
+  }
+
+  .digitalizacion .contentImg {
+    position: relative;
+  }
+
+  .digitalizacion .contentImg img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .digitalizacion .contentImg .contentData {
+    position: absolute;
+    width: 100%;
+    bottom: 16px;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+  }
+
+  .digitalizacion .contentImg .contentData .titleH4 {
+    margin-bottom: 16px;
+  }
+
+  .digitalizacion .contentImg .contentData a {
+    display: inline-block;
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .digitalizacion .contentImg .contentData {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .digitalizacion .preguntas {
+    font-size: 1rem;
+  }
+
+  .digitalizacion .preguntas.last {
+    margin-bottom: 32px;
+  }
+
+  .digitalizacion .contentImg .contentData {
+    bottom: 2rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .digitalizacion .contentImg img {
+    width: 100%;
+    height: auto;
+    max-height: 825px;
+  }
+}
+
+@media (min-width: 1600px) {
+}
+
+@media (min-width: 1800px) {
+}

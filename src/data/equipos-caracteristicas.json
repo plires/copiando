@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Contrato de servicios por 12 meses",
+      "col": "izq"
+    },
+    {
+      "id": 2,
+      "title": "Capacitación Inicial de usuario",
+      "col": "izq"
+    },
+    {
+      "id": 3,
+      "title": "Mesa de ayuda de Lunes a Viernes de 9 a 18 Hs",
+      "col": "izq"
+    },
+    {
+      "id": 4,
+      "title": "Servicio técnico dentro de las 24 Hs de solicitado el servicio",
+      "col": "der"
+    },
+    {
+      "id": 5,
+      "title": "Impresión a demanda grandes volúmenes al precio del Click",
+      "col": "izq"
+    },
+    {
+      "id": 6,
+      "title": "Software de administración y control",
+      "col": "izq"
+    },
+    {
+      "id": 7,
+      "title": "Instalación inicial sin cargo extra",
+      "col": "der"
+    },
+    {
+      "id": 8,
+      "title": "Entrega y retiro de  insumos sin costo",
+      "col": "izq"
+    },
+    {
+      "id": 9,
+      "title": "Visitas técnicas ilimitadas",
+      "col": "der"
+    },
+    {
+      "id": 10,
+      "title": "Tóner de repuesto",
+      "col": "der"
+    },
+    {
+      "id": 11,
+      "title": "Equipo de Back Up",
+      "col": "der"
+    },
+    {
+      "id": 12,
+      "title": "Capacitación de usuarios permanente",
+      "col": "der"
+    }
+  ]
+}

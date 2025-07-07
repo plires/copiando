@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Luciano D.",
+      "position": "Responsable de RRHH.",
+      "date": "25/04/2024",
+      "stars": 5,
+      "description": "“Nos ayudaron a organizar todo nuestro flujo interno, eliminamos el papel y ganamos tiempo. Ahora todo está digitalizado y accesible gracias a la gestión documental.”"
+    },
+    {
+      "id": 2,
+      "name": "Sofía R.",
+      "position": "Coordinadora Administrativa",
+      "date": "12/07/2024",
+      "stars": 5,
+      "description": "“Contratamos el servicio de digitalización para nuestro archivo físico y fue impecable. Entrega puntual. Nos ahorraron emanas de trabajo.”"
+    },
+    {
+      "id": 3,
+      "name": "Marcelo D.",
+      "position": "Responsable de IT",
+      "date": "15/01/2025",
+      "stars": 4,
+      "description": "“Alquilamos sus equipos multifunción para uso diario, son modernos y prácticos. Llamamos el soporte técnico ante alguna  ventualidad y han respondido en menos de 24 hs. Nos dio muchísima tranquilidad contar con ellos.”"
+    },
+    {
+      "id": 4,
+      "name": "Carla M.",
+      "position": "Estudio Jurídico.",
+      "date": "20/03/2025",
+      "stars": 5,
+      "description": "“Tenemos el servicio del gestor documental y ahora encontramos todo muy rápido. La mejor inversión para nuestra oficina.”"
+    },
+    {
+      "id": 5,
+      "name": "Juan T.",
+      "position": "Gerente de Proyectos.",
+      "date": "03/05/2025",
+      "stars": 5,
+      "description": "“Alquilamos impresoras multifunción para un proyecto temporal y funcionaron perfecto. Instalación rápida, mantenimiento incluido y excelente relación precio-calidad. Volveremos a elegirlos.”"
+    }
+  ]
+}

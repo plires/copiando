@@ -1,0 +1,40 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star_individual {
+  max-width: 22px;
+  width: 22px;
+  margin-right: 10px;
+}
+
+.star_individual:last-child {
+  margin-right: 0;
+}
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .content {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+  .star_individual {
+    max-width: 30px;
+    width: 30px;
+  }
+}
+
+@media (min-width: 1600px) {
+}

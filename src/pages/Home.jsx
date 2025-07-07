@@ -4,6 +4,7 @@ import Multifuncion from '@/components/Multifuncion.jsx'
 import OtrosServicios from '@/components/OtrosServicios.jsx'
 import ParaQuienes from '@/components/ParaQuienes.jsx'
 import NuestrosClientes from '@/components/NuestrosClientes.jsx'
+import Resenas from '@/components/Resenas.jsx'
 
 import './home.css'
 
@@ -16,6 +17,7 @@ const Home = () => {
       <OtrosServicios />
       <ParaQuienes />
       <NuestrosClientes />
+      <Resenas />
     </section>
   )
 }

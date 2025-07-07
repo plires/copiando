@@ -87,6 +87,11 @@ a.btnLanding:hover {
   font-size: 1.15rem;
 }
 
+.slick-prev::before,
+.slick-next::before {
+  color: #dfdfdf;
+}
+
 /* MEDIA QUERIES */
 @media (min-width: 576px) {
 }
@@ -95,9 +100,24 @@ a.btnLanding:hover {
   .titleH2 {
     font-size: 2.5rem;
   }
+
+  .prev {
+    left: 60px !important;
+  }
+
+  .next {
+    right: 60px !important;
+  }
 }
 
 @media (min-width: 992px) {
+  .prev {
+    left: 170px !important;
+  }
+
+  .next {
+    right: 170px !important;
+  }
 }
 
 @media (min-width: 1200px) {

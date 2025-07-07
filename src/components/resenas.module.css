@@ -1,0 +1,152 @@
+.resena {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #c1c1c1;
+}
+
+.contentResena {
+  max-width: 400px;
+  padding: 1rem;
+  background: #2f2828;
+  border-radius: 16px;
+}
+
+.contentResena p {
+  margin-bottom: 0;
+}
+
+.contentHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 1px grey;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.data {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.name,
+.date {
+  color: white;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 1rem;
+}
+
+.tilde {
+  width: 20px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.position {
+  position: relative;
+  margin-left: 10px;
+  font-size: 0.85rem;
+}
+
+.position::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 0;
+  width: 1px;
+  height: 50%;
+  transform: translateY(50%);
+  background: #c1c1c1;
+}
+
+.date {
+  font-size: 0.85rem;
+}
+
+.contentStar {
+  margin-bottom: 16px;
+}
+
+.description {
+  font-size: 0.85rem;
+}
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .contentResena {
+    max-width: 450px;
+    padding: 2rem;
+  }
+
+  .contentHeader {
+    flex-direction: row;
+    margin-bottom: 0;
+    padding-bottom: 8px;
+    border-bottom: none;
+  }
+
+  .contentStar {
+    margin-bottom: 30px;
+  }
+
+  .data {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+  .contentResena {
+    max-width: 550px;
+  }
+
+  .name {
+    font-size: 1.25rem;
+  }
+
+  .position,
+  .date,
+  .description {
+    font-size: 1rem;
+  }
+
+  .contentStar {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .contentResena {
+    max-width: 650px;
+    padding: 3rem;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .position,
+  .date,
+  .description {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1600px) {
+}
+
+@media (min-width: 1800px) {
+}

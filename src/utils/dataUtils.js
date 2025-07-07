@@ -3,12 +3,14 @@ import equipos from '@/data/equipos.json'
 import equiposCaracteristicas from '@/data/equipos-caracteristicas.json'
 import serviciosCaracteristicas from '@/data/servicios-caracteristicas.json'
 import logos from '@/data/logos.json'
+import resenas from '@/data/resenas.json'
 
 export const getItems = key => items[key]
 export const getEquipos = key => equipos[key]
 export const getEquiposCaracteristicas = key => equiposCaracteristicas[key]
 export const getServiciosCaracteristicas = key => serviciosCaracteristicas[key]
 export const getLogos = key => logos[key]
+export const getResenas = key => resenas[key]
 
 export const scrollToTop = () => {
   window.scroll({

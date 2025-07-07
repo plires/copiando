@@ -1,0 +1,71 @@
+.ctaAsesoria {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.ctaAsesoria :global(.titleH2 br) {
+  display: none;
+}
+
+.imgAsesoria {
+  max-width: 65% !important;
+  filter: drop-shadow(0 2px 8px rgba(99, 99, 99, 0.2));
+}
+
+.message {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .contentData {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 30px;
+  }
+
+  .imgAsesoria {
+    max-width: 40% !important;
+  }
+
+  .message {
+    background: var(--primary-color);
+    border-radius: 16px;
+    padding: 1rem;
+    color: white;
+    width: 60%;
+    z-index: -2;
+    margin-left: -65px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .message {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .message {
+    font-size: 2.75rem;
+  }
+}
+
+@media (min-width: 1400px) {
+}
+
+@media (min-width: 1600px) {
+}
+
+@media (min-width: 1800px) {
+}

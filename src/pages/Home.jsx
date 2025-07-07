@@ -5,6 +5,7 @@ import OtrosServicios from '@/components/OtrosServicios.jsx'
 import ParaQuienes from '@/components/ParaQuienes.jsx'
 import NuestrosClientes from '@/components/NuestrosClientes.jsx'
 import Resenas from '@/components/Resenas.jsx'
+import CTAAsesoria from '@/components/CTAAsesoria.jsx'
 
 import './home.css'
 
@@ -18,6 +19,7 @@ const Home = () => {
       <ParaQuienes />
       <NuestrosClientes />
       <Resenas />
+      <CTAAsesoria />
     </section>
   )
 }

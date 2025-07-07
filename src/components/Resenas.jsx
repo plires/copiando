@@ -61,33 +61,37 @@ const Resenas = () => {
   }
 
   return (
-    <section className='container'>
-      <div className='row'>
-        <div className='col-md-12'>
-          <Slider {...settings}>
-            {resenas.map(item => (
-              <article key={item.id} className={`${styles.resena}`}>
-                <div className={`${styles.contentResena}`}>
-                  <div className={`${styles.contentHeader}`}>
-                    <div className={`${styles.data}`}>
-                      <p className={`${styles.name}`}>{item.name}</p>
-                      <img
-                        className={`${styles.tilde}`}
-                        src={tilde}
-                        alt={`tilde ${item.name}`}
-                      />
-                      <p className={`${styles.position}`}>{item.position}</p>
+    <section className={`${styles.sectionResenas}`}>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-md-12'>
+            <Slider {...settings}>
+              {resenas.map(item => (
+                <article key={item.id} className={`${styles.resena}`}>
+                  <div className={`${styles.contentResena}`}>
+                    <div className={`${styles.contentHeader}`}>
+                      <div className={`${styles.data}`}>
+                        <p className={`${styles.name}`}>{item.name}</p>
+                        <img
+                          className={`${styles.tilde}`}
+                          src={tilde}
+                          alt={`tilde ${item.name}`}
+                        />
+                        <p className={`${styles.position}`}>{item.position}</p>
+                      </div>
+                      <p className={`${styles.date}`}>{item.date}</p>
                     </div>
-                    <p className={`${styles.date}`}>{item.date}</p>
+                    <div className={`${styles.contentStar}`}>
+                      <Stars resena={item} />
+                    </div>
+                    <p className={`${styles.description}`}>
+                      {item.description}
+                    </p>
                   </div>
-                  <div className={`${styles.contentStar}`}>
-                    <Stars resena={item} />
-                  </div>
-                  <p className={`${styles.description}`}>{item.description}</p>
-                </div>
-              </article>
-            ))}
-          </Slider>
+                </article>
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
     </section>

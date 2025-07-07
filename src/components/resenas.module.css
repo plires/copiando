@@ -1,3 +1,7 @@
+.sectionResenas {
+  margin-bottom: 60px;
+}
+
 .resena {
   display: flex !important;
   justify-content: center;

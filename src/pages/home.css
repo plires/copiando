@@ -19,6 +19,9 @@
 }
 
 @media (min-width: 1600px) {
+  .home {
+    margin-bottom: 120px;
+  }
 }
 
 @media (min-width: 1800px) {

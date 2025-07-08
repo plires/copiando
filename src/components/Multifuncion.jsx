@@ -1,4 +1,3 @@
-import { Link } from 'react-router'
 import { getEquipos, getEquiposCaracteristicas } from '@/utils/dataUtils.js'
 
 import Listado from '@/components/Listado.jsx'
@@ -10,7 +9,7 @@ import puntosIzq from '@/assets/img/puntos.svg'
 
 import './multifuncion.css'
 
-const Multifuncion = () => {
+const Multifuncion = ({ onContactoClick }) => {
   const items = getEquipos('items')
   const caracteristicas = getEquiposCaracteristicas('items')
   return (
@@ -56,9 +55,12 @@ const Multifuncion = () => {
 
         <div className='row'>
           <div className='col-md-12 text-center'>
-            <Link className='btnLanding transition' to='#'>
+            <button
+              onClick={onContactoClick}
+              className='btnLanding btn transition'
+            >
               SOLICITALO HOY MISMO
-            </Link>
+            </button>
           </div>
         </div>
       </div>

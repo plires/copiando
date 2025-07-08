@@ -7,7 +7,7 @@ import Formulario from '@/components/commons/Formulario.jsx'
 
 import './slide.css'
 
-const Slide = () => {
+const Slide = ({ ref }) => {
   return (
     <section data-aos='fade-up' className='slide'>
       <picture>
@@ -35,7 +35,7 @@ const Slide = () => {
                   </p>
                 </div>
                 <div className='col-md-6 contentForm'>
-                  <Formulario />
+                  <Formulario ref={ref} />
                   <Link
                     to={import.meta.env.VITE_WHATSAPP_LINK}
                     className='whatsapp transition'

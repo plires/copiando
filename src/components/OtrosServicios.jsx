@@ -1,10 +1,9 @@
-import { Link } from 'react-router'
 import gestor from '@/assets/img/gestor-documental.webp'
 import firma from '@/assets/img/firma-digital.webp'
 
 import './otros-servicios.css'
 
-const OtrosServicios = () => {
+const OtrosServicios = ({ onContactoClick }) => {
   return (
     <section className='otrosServicios'>
       <h3 className='titleH3'>¿Qué más ofrecemos?</h3>
@@ -41,9 +40,9 @@ const OtrosServicios = () => {
       </div>
 
       <div className='contentBtn text-center'>
-        <Link className='btnLanding transition' to='#'>
+        <button onClick={onContactoClick} className='btnLanding btn transition'>
           SOLICITÁ INFORMACIÓN
-        </Link>
+        </button>
       </div>
     </section>
   )

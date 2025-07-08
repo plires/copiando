@@ -1,9 +1,8 @@
-import { Link } from 'react-router'
 import asesoria from '@/assets/img/asesoria.webp'
 
 import styles from './cta-asesoria.module.css'
 
-const CTAAsesoria = () => {
+const CTAAsesoria = ({ onContactoClick }) => {
   return (
     <section className={`${styles.ctaAsesoria}`}>
       <div className='puntos'></div>
@@ -31,9 +30,12 @@ const CTAAsesoria = () => {
                 transformación digital.
               </div>
             </div>
-            <Link to='#' className='btnLanding transition'>
+            <button
+              onClick={onContactoClick}
+              className='btnLanding btn transition'
+            >
               SOLICITÁ ASESORÍA HOY
-            </Link>
+            </button>
           </div>
         </div>
       </div>

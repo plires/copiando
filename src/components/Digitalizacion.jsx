@@ -1,5 +1,3 @@
-import { Link } from 'react-router'
-
 import { getItems } from '@/utils/dataUtils.js'
 import Accordion from '@/components/commons/Accordion.jsx'
 import digitalizacionDesktop from '@/assets/img/digitalizacion-documentos-desktop.webp'
@@ -9,7 +7,7 @@ import 'bootstrap/dist/js/bootstrap.js'
 
 import './digitalizacion.css'
 
-const Digitalizacion = () => {
+const Digitalizacion = ({ onContactoClick }) => {
   const items = getItems('items')
   return (
     <section className='digitalizacion'>
@@ -59,9 +57,12 @@ const Digitalizacion = () => {
               <h4 className='titleH4'>
                 Hacemos diagnóstico de tus procesos SIN CARGO
               </h4>
-              <Link className='btnLanding transition' to='#'>
+              <button
+                onClick={onContactoClick}
+                className='btnLanding btn transition'
+              >
                 SOLICITALO HOY MISMO
-              </Link>
+              </button>
             </div>
           </div>
         </div>

@@ -44,9 +44,9 @@ button:focus {
   box-shadow: none !important;
 }
 
-a.btnLanding {
+button.btnLanding {
   background: var(--primary-color);
-  color: white;
+  color: white !important;
   width: fit-content;
   font-weight: 700;
   text-align: center;
@@ -58,7 +58,7 @@ a.btnLanding {
   display: inline-block;
 }
 
-a.btnLanding:hover {
+button.btnLanding:hover {
   background: black;
 }
 

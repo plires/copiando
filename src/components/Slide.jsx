@@ -32,6 +32,7 @@ const Slide = ({ ref }) => {
                   <p className='bajada'>
                     Hacé más eficiente tu empresa con nuestros servicios de
                     digitalización de documentos y alquiler de equipos
+                    multifunción
                   </p>
                 </div>
                 <div className='col-md-6 contentForm'>

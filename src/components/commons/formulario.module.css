@@ -47,14 +47,12 @@
 }
 
 .inputContainer:not(.selectContainer):has(.input:focus) .label {
-  color: var(--primary-color);
   top: -20px !important;
   font-size: 12px !important;
 }
 
 .inputContainer:has(.input:focus) .label,
 .inputContainer:has(.input:not(:placeholder-shown)) .label {
-  color: var(--primary-color);
   top: -20px !important;
   font-size: 12px !important;
 }

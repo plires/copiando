@@ -6,39 +6,6 @@ use PHPMailer\PHPMailer\PHPMailer;
 class App
 {
 
-  // public function subscribeUserInPerfit($post)
-  // {
-
-  //   if (is_object($post)) {
-  //     $post = (array) $post;
-  //   }
-
-  //   if (isset($post['newsletter'])) {
-
-  //     $perfit = new PerfitSDK\Perfit(['apiKey' => $_ENV['VITE_PERFIT_API_KEY']]);
-  //     $listId = $_ENV['VITE_PERFIT_LIST'];
-
-  //     $response = $perfit->post(
-  //       '/lists/' . $listId . '/contacts',
-  //       [
-  //         'firstName' => $post['name'],
-  //         'email' => $post['email'],
-  //         'customFields' =>
-  //         [
-  //           [
-  //             'id' => 12,
-  //             'value' => $post['utm_source']
-  //           ]
-  //         ]
-  //       ]
-  //     );
-
-  //     return $response;
-  //   }
-
-  //   return false;
-  // }
-
   public function validEmail($email)
   {
     $mail_valid = 0;
@@ -138,9 +105,9 @@ class App
 
       case 'Usuario':
         //ENVIOS
-        $objectPhpMailer->setFrom($destinationEmail, $_ENV['VITE_NAME_LANDING']);
+        $objectPhpMailer->setFrom($destinationEmail, $_ENV['NAME_APP']);
         $objectPhpMailer->addAddress($post['email']); //Add a recipient
-        $objectPhpMailer->addReplyTo($_ENV['MAIL_CONTACTO'], $_ENV['VITE_NAME_LANDING']);
+        $objectPhpMailer->addReplyTo($_ENV['MAIL_CONTACTO'], $_ENV['NAME_APP']);
         break;
     }
 

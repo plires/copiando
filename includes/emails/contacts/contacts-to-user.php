@@ -348,7 +348,7 @@
           </p>
 
           <p class="fallback-font" style="margin: 0 0 10px; font-family: 'Montserrat', sans-serif; font-size: 16px; line-height: 26px; color: #000000; text-align: left; font-weight: 400;">
-            Saludos cordiales,
+            Saludos cordiales.
           </p>
 
           <h3 class="fallback-font" style="margin: 0 0 10px 0; font-family: 'Montserrat', sans-serif; font-size: 16px; line-height: 26px; color: #000000; text-align: right; font-weight: 700;">

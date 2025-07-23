@@ -11,7 +11,7 @@ const OtrosServicios = () => {
   const { setMessage, textAreaRef } = useContext(StoreContext)
 
   return (
-    <section className='otrosServicios'>
+    <section id='servicios' className='otrosServicios'>
       <h3 className='titleH3'>¿Qué más ofrecemos?</h3>
 
       <div className='contentGestor'>

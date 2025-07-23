@@ -20,7 +20,7 @@ const Multifuncion = () => {
   const items = getEquipos('items')
   const caracteristicas = getEquiposCaracteristicas('items')
   return (
-    <section className='multifuncion'>
+    <section id='multifuncion' className='multifuncion'>
       <h3 className='titleH3'>Alquiler de Equipos Multifunción</h3>
       <div className='puntosIzq'>
         <img className='img-fluid' src={puntosIzq} alt='puntos izquierdo' />

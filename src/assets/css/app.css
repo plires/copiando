@@ -92,6 +92,12 @@ button.btnLanding:hover {
   color: #dfdfdf;
 }
 
+#digitalizacion,
+#multifuncion,
+#servicios {
+  scroll-margin-top: 55px; /* Altura del header fijo */
+}
+
 /* MEDIA QUERIES */
 @media (min-width: 576px) {
 }

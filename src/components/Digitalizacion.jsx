@@ -19,7 +19,9 @@ const Digitalizacion = () => {
         <div className='row'>
           <div className='col-md-12 p-0'>
             <h2 className='titleH2'>¿Que ofrecemos?</h2>
-            <h3 className='titleH3'>Digitalización de Documentos</h3>
+            <h3 id='digitalizacion' className='titleH3'>
+              Digitalización de Documentos
+            </h3>
           </div>
         </div>
       </div>

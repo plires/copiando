@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import { NavLink, Link } from 'react-router'
+import { Link } from 'react-router'
+import { scrollToSection } from '@/utils/dataUtils'
 
 import logoLarge from '@/assets/img/logo-copiando.webp'
 import logoSmall from '@/assets/img/logo-copiando-small.webp'
@@ -68,31 +69,40 @@ const Header = () => {
       <nav className='transition' ref={navElement}>
         <ul>
           <li>
-            <NavLink
+            <Link
               className='transition anton'
-              to='/fan-zone'
-              onClick={() => changeIconMobile()}
+              to='/'
+              onClick={() => {
+                changeIconMobile()
+                scrollToSection('digitalizacion')
+              }}
             >
               Digitalización de documentos
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
+            <Link
               className='transition anton'
-              to='/copiando-itinerante'
-              onClick={() => changeIconMobile()}
+              to='/'
+              onClick={() => {
+                changeIconMobile()
+                scrollToSection('multifuncion')
+              }}
             >
               Alquiler de equipos multifunción
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
+            <Link
               className='transition anton'
-              to='/cultura-copiando'
-              onClick={() => changeIconMobile()}
+              to='/'
+              onClick={() => {
+                changeIconMobile()
+                scrollToSection('servicios')
+              }}
             >
               Otros Servicios
-            </NavLink>
+            </Link>
           </li>
         </ul>
       </nav>

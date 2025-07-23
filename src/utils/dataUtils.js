@@ -12,6 +12,13 @@ export const getServiciosCaracteristicas = key => serviciosCaracteristicas[key]
 export const getLogos = key => logos[key]
 export const getResenas = key => resenas[key]
 
+export const scrollToSection = id => {
+  const target = document.getElementById(id)
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' })
+  }
+}
+
 export const scrollToTop = (setMessage, msg, textAreaRef) => {
   setMessage(msg)
 

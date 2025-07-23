@@ -20,6 +20,21 @@ export const scrollToTop = () => {
   })
 }
 
+export const handleWhatsapp = () => {
+  // Crear un objeto de fecha en la zona horaria de Buenos Aires
+  const now = new Date().toLocaleString('en-US', {
+    timeZone: 'America/Argentina/Buenos_Aires',
+  })
+  const buenosAiresTime = new Date(now)
+
+  // Obtener la hora actual en formato 24 horas
+  const realTime = buenosAiresTime.getHours()
+  return (
+    realTime >= parseInt(import.meta.env.VITE_WHATSAPP_START_TIME) &&
+    realTime < parseInt(import.meta.env.VITE_WHATSAPP_END_TIME)
+  )
+}
+
 export const validation = values => {
   const errors = {}
   if (!values.name) {

@@ -25,6 +25,10 @@
   margin: 0;
 }
 
+.slide .content .contentForm {
+  position: relative;
+}
+
 .slide .whatsapp {
   position: relative;
   background: #00a139;
@@ -32,13 +36,35 @@
   color: white;
   font-weight: 900;
   text-align: center;
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 0.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: fit-content;
+  width: 235px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.slide .contentWhatsapp {
+  position: absolute;
+  bottom: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slide .closeWhatsapp {
+  display: inline-block;
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  z-index: 100;
+  color: black;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.slide .closeWhatsapp:hover {
+  opacity: 0.6;
 }
 
 .slide .whatsapp .iconWhatsapp {
@@ -86,7 +112,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 36px;
-    padding-bottom: 36px;
+    padding-bottom: 100px;
   }
 
   .slide .content {
@@ -119,7 +145,7 @@
 
   .slide .whatsapp {
     padding-right: 40px;
-    font-size: 1.15rem;
+    font-size: 0.95rem;
   }
 
   .slide .whatsapp .iconWhatsapp {
@@ -128,6 +154,12 @@
     top: 50%;
     transform: translateY(-50%);
     right: -30px;
+  }
+
+  .slide .closeWhatsapp {
+    top: -1.8rem;
+    right: -2rem;
+    color: white;
   }
 }
 
@@ -147,7 +179,7 @@
 @media (min-width: 1400px) {
   .slide {
     padding-top: 64px;
-    padding-bottom: 64px;
+    padding-bottom: 120px;
   }
 
   .slide .content h1 {

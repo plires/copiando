@@ -1,4 +1,5 @@
-import { forwardRef, useState } from 'react'
+import { useRef, useState, useContext, useEffect } from 'react'
+import { StoreContext } from '@/context/store.jsx'
 import { Formik, Field, Form, ErrorMessage } from 'formik'
 import { useGoogleReCaptcha } from 'react19-google-recaptcha-v3'
 import ErrorInput from '@/components/commons/ErrorInput.jsx'
@@ -9,11 +10,20 @@ import { validation } from '@/utils/dataUtils'
 
 import styles from './formulario.module.css'
 
-const Formulario = forwardRef((props, ref) => {
+const Formulario = () => {
   const [loading, setLoading] = useState(false)
   const [wordBtn, setWordBtn] = useState('QUIERO MÁS INFORMACIÓN')
   const [inputSelect, setInputSelect] = useState(false)
   const { executeRecaptcha } = useGoogleReCaptcha()
+  const { message, setMessage, textAreaRef } = useContext(StoreContext)
+
+  const ref = useRef()
+
+  useEffect(() => {
+    if (ref.current) {
+      ref.current.setFieldValue('comments', message)
+    }
+  }, [message])
 
   const sendForm = async (values, { setSubmitting, resetForm }) => {
     setLoading(true)
@@ -78,6 +88,7 @@ const Formulario = forwardRef((props, ref) => {
     }
 
     resetForm()
+    setMessage('')
     setSubmitting(false)
     setLoading(false)
     setWordBtn('QUIERO MÁS INFORMACIÓN')
@@ -91,7 +102,7 @@ const Formulario = forwardRef((props, ref) => {
   }
 
   return (
-    <section ref={ref} className={`${styles.formulario}`}>
+    <section className={`${styles.formulario}`}>
       <div id='formulario'>
         <div className={`${styles.frase}`}>
           <p>
@@ -101,12 +112,12 @@ const Formulario = forwardRef((props, ref) => {
         </div>
         <div className={`${styles.contentPadding}`}>
           <Formik
-            // ref={contactoRef}
+            innerRef={ref}
             initialValues={initFormDefault}
             validate={validation}
             onSubmit={sendForm}
           >
-            {({ handleSubmit, isSubmitting, setFieldValue }) => (
+            {({ handleSubmit, isSubmitting }) => (
               <Form
                 data-aos='fade-up'
                 id='form_contacto'
@@ -159,11 +170,14 @@ const Formulario = forwardRef((props, ref) => {
                       Dejanos tu consulta
                     </label>
                     <Field
+                      innerRef={textAreaRef}
                       className={`form-control ${styles.input} transition`}
                       as='textarea'
                       name='comments'
                       rows='4'
                       placeholder=''
+                      value={message}
+                      onChange={event => setMessage(event.target.value)}
                     />
                     <ErrorMessage name='comments' component={ErrorInput} />
                   </div>
@@ -184,5 +198,5 @@ const Formulario = forwardRef((props, ref) => {
       </div>
     </section>
   )
-})
+}
 export default Formulario

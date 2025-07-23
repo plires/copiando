@@ -1,8 +1,14 @@
+import { useContext } from 'react'
+import { StoreContext } from '@/context/store'
+import { scrollToTop } from '@/utils/dataUtils.js'
+
 import asesoria from '@/assets/img/asesoria.webp'
 
 import styles from './cta-asesoria.module.css'
 
-const CTAAsesoria = ({ onContactoClick }) => {
+const CTAAsesoria = () => {
+  const { setMessage, textAreaRef } = useContext(StoreContext)
+
   return (
     <section className={`${styles.ctaAsesoria}`}>
       <div className='puntos'></div>
@@ -31,7 +37,13 @@ const CTAAsesoria = ({ onContactoClick }) => {
               </div>
             </div>
             <button
-              onClick={onContactoClick}
+              onClick={() =>
+                scrollToTop(
+                  setMessage,
+                  'Quiero digitalizar mi empresa, solicito una asesoría gratuita...',
+                  textAreaRef.current,
+                )
+              }
               className='btnLanding btn transition'
             >
               SOLICITÁ ASESORÍA HOY

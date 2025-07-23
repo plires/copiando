@@ -3,14 +3,13 @@ import slideDesktop from '@/assets/img/header-desktop.webp'
 import iconWhatsapp from '@/assets/img/logo-whatsapp.svg'
 import { handleWhatsapp } from '@/utils/dataUtils'
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router'
 import { IoCloseCircle } from 'react-icons/io5'
 
 import Formulario from '@/components/commons/Formulario.jsx'
 
 import './slide.css'
 
-const Slide = ({ ref }) => {
+const Slide = () => {
   useEffect(() => {
     setWhatsappOpen(handleWhatsapp())
   }, [])
@@ -44,7 +43,7 @@ const Slide = ({ ref }) => {
                   </p>
                 </div>
                 <div className='col-md-6 contentForm'>
-                  <Formulario ref={ref} />
+                  <Formulario />
                   {whatsappOpen && (
                     <div className='contentWhatsapp'>
                       <a

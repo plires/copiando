@@ -1,9 +1,15 @@
+import { useContext } from 'react'
+import { StoreContext } from '@/context/store'
+import { scrollToTop } from '@/utils/dataUtils.js'
+
 import gestor from '@/assets/img/gestor-documental.webp'
 import firma from '@/assets/img/firma-digital.webp'
 
 import './otros-servicios.css'
 
-const OtrosServicios = ({ onContactoClick }) => {
+const OtrosServicios = () => {
+  const { setMessage, textAreaRef } = useContext(StoreContext)
+
   return (
     <section className='otrosServicios'>
       <h3 className='titleH3'>¿Qué más ofrecemos?</h3>
@@ -40,7 +46,16 @@ const OtrosServicios = ({ onContactoClick }) => {
       </div>
 
       <div className='contentBtn text-center'>
-        <button onClick={onContactoClick} className='btnLanding btn transition'>
+        <button
+          onClick={() =>
+            scrollToTop(
+              setMessage,
+              'Necesito mas información sobre el gestor documental y el servicio de firma digital...',
+              textAreaRef.current,
+            )
+          }
+          className='btnLanding btn transition'
+        >
           SOLICITÁ INFORMACIÓN
         </button>
       </div>

@@ -1,7 +1,12 @@
-import { getEquipos, getEquiposCaracteristicas } from '@/utils/dataUtils.js'
+import { useContext } from 'react'
+import { StoreContext } from '@/context/store'
+import {
+  getEquipos,
+  getEquiposCaracteristicas,
+  scrollToTop,
+} from '@/utils/dataUtils.js'
 
 import Listado from '@/components/Listado.jsx'
-
 import Features from '@/components/Features.jsx'
 
 import equipo from '@/assets/img/impresora-multifuncion.webp'
@@ -9,7 +14,9 @@ import puntosIzq from '@/assets/img/puntos.svg'
 
 import './multifuncion.css'
 
-const Multifuncion = ({ onContactoClick }) => {
+const Multifuncion = () => {
+  const { setMessage, textAreaRef } = useContext(StoreContext)
+
   const items = getEquipos('items')
   const caracteristicas = getEquiposCaracteristicas('items')
   return (
@@ -56,7 +63,13 @@ const Multifuncion = ({ onContactoClick }) => {
         <div className='row'>
           <div className='col-md-12 text-center'>
             <button
-              onClick={onContactoClick}
+              onClick={() =>
+                scrollToTop(
+                  setMessage,
+                  'Necesito mas información sobre los planes de alquiler de equipos multifunción...',
+                  textAreaRef.current,
+                )
+              }
               className='btnLanding btn transition'
             >
               SOLICITALO HOY MISMO

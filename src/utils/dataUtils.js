@@ -12,12 +12,18 @@ export const getServiciosCaracteristicas = key => serviciosCaracteristicas[key]
 export const getLogos = key => logos[key]
 export const getResenas = key => resenas[key]
 
-export const scrollToTop = () => {
+export const scrollToTop = (setMessage, msg, textAreaRef) => {
+  setMessage(msg)
+
   window.scroll({
     top: 0,
     left: 0,
     behavior: 'smooth',
   })
+
+  setTimeout(() => {
+    textAreaRef.focus()
+  }, 500)
 }
 
 export const handleWhatsapp = () => {

@@ -1,4 +1,6 @@
-import { getItems } from '@/utils/dataUtils.js'
+import { useContext } from 'react'
+import { StoreContext } from '@/context/store'
+import { getItems, scrollToTop } from '@/utils/dataUtils.js'
 import Accordion from '@/components/commons/Accordion.jsx'
 import digitalizacionDesktop from '@/assets/img/digitalizacion-documentos-desktop.webp'
 import digitalizacionModDesktop from '@/assets/img/digitalizacion-documentos-mod.webp'
@@ -7,7 +9,9 @@ import 'bootstrap/dist/js/bootstrap.js'
 
 import './digitalizacion.css'
 
-const Digitalizacion = ({ onContactoClick }) => {
+const Digitalizacion = () => {
+  const { setMessage, textAreaRef } = useContext(StoreContext)
+
   const items = getItems('items')
   return (
     <section className='digitalizacion'>
@@ -58,7 +62,13 @@ const Digitalizacion = ({ onContactoClick }) => {
                 Hacemos diagnóstico de tus procesos SIN CARGO
               </h4>
               <button
-                onClick={onContactoClick}
+                onClick={() =>
+                  scrollToTop(
+                    setMessage,
+                    'Necesito mas información sobre digitalización de documentos...',
+                    textAreaRef.current,
+                  )
+                }
                 className='btnLanding btn transition'
               >
                 SOLICITALO HOY MISMO

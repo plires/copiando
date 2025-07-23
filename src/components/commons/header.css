@@ -136,7 +136,7 @@ header nav a.active {
   }
 
   header nav a {
-    font-size: 1.15rem;
+    font-size: 0.9rem;
     color: var(--third-color) !important;
   }
 
@@ -145,7 +145,7 @@ header nav a.active {
   }
 
   header nav a:hover {
-    color: var(--secondary-color) !important;
+    color: var(--primary-color) !important;
   }
 
   header .hamburguer {
@@ -180,7 +180,7 @@ header nav a.active {
 
 @media (min-width: 1400px) {
   header {
-    padding: 20px;
+    padding: 20px 3rem;
   }
 
   header .logo {
@@ -196,12 +196,11 @@ header nav a.active {
   }
 
   header nav a {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   header.fixed {
-    padding: 15px;
-    padding-right: 60px;
+    padding: 15px 2rem;
   }
 
   header.fixed .logo {

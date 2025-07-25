@@ -18,7 +18,7 @@ class RepositorioContactsSQL extends repositorioContacts
       $post = (array) $post;
     }
 
-    $sql = "INSERT INTO contacts values(default, :name, :email, :phone, :comments, :origin, :utm_source, :utm_medium, :utm_campaign, :utm_content, :date)";
+    $sql = "INSERT INTO contacts values(default, :name, :email, :phone, :comments, :origin, :utm_source, :utm_medium, :utm_campaign, :utm_content, :utm_term, :date)";
     $stmt = $this->conexion->prepare($sql);
     $stmt->bindValue(":name", $post['name'], PDO::PARAM_STR);
     $stmt->bindValue(":email", $post['email'], PDO::PARAM_STR);
@@ -29,6 +29,7 @@ class RepositorioContactsSQL extends repositorioContacts
     $stmt->bindValue(":utm_medium", $post['utm_medium'], PDO::PARAM_STR);
     $stmt->bindValue(":utm_campaign", $post['utm_campaign'], PDO::PARAM_STR);
     $stmt->bindValue(":utm_content", $post['utm_content'], PDO::PARAM_STR);
+    $stmt->bindValue(":utm_term", $post['utm_term'], PDO::PARAM_STR);
     $stmt->bindValue(":date", date("F j, Y, g:i a"), PDO::PARAM_STR);
 
     $save = $stmt->execute();

@@ -62,6 +62,12 @@ const Formulario = () => {
       values.utm_content = 'No Set'
     }
 
+    if (urlParams.has('utm_term')) {
+      values.utm_term = urlParams.get('utm_term')
+    } else {
+      values.utm_term = 'No Set'
+    }
+
     try {
       const res = await axios.post(
         import.meta.env.VITE_ROOT + 'php/process.php',
@@ -70,10 +76,14 @@ const Formulario = () => {
 
       const responseData = res.data
 
-      console.log(responseData)
-
       if (responseData.success) {
         toast.success(responseData.msg_success)
+
+        window.dataLayer = window.dataLayer || []
+        window.dataLayer.push({
+          event: 'send_form_landing',
+          formLocation: 'form_landing',
+        })
       } else {
         if (Array.isArray(responseData.errors)) {
           responseData.errors.map(error => toast.error(error))
